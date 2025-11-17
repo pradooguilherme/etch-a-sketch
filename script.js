@@ -1,8 +1,22 @@
-let containers = document.querySelector('.flex-container')
-console.log(containers)
+let numbRows = 8
+let numbColumns = 8
 
-for(let i = 0; i < 10; i++){
-    let div = document.createElement('div')
-    div.classList.add('div-container')
-    containers.appendChild(div)
+function createGrid(numbRows, numbColumns, container) {
+    
+    for (let i = 0; i < numbRows; i++) {
+        
+        let lineContainer = document.createElement('div')
+        lineContainer.classList.add('line-container')
+        
+        for (let j = 0; j < numbColumns; j++) {
+            
+            let gridSquare = document.createElement('div')
+            lineContainer.appendChild(gridSquare)
+        }
+        
+        container.appendChild(lineContainer)
+    }
 }
+
+const divContainer = document.querySelector('.container')
+createGrid(numbRows, numbColumns, divContainer)
