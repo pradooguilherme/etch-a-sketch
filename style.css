@@ -1,14 +1,11 @@
-.flex-container {
-    background-color: aqua;
-    padding: 12px;
-    border: 4px solid blue;
+.line-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.flex-container div {
-    background: peachpuff;
-    border: 4px solid brown;
-    flex: 1;
-    margin: 4px;
+.line-container div {
+    background: white;
+    border: 1px solid brown;
     height: 100px;
+    flex: 1
 }
