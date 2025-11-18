@@ -1,5 +1,5 @@
-let numbRows = 8
-let numbColumns = 8
+let numbRows = 10
+let numbColumns = 10
 
 function createGrid(numbRows, numbColumns, container) {
     
@@ -12,11 +12,14 @@ function createGrid(numbRows, numbColumns, container) {
             
             let gridSquare = document.createElement('div')
             lineContainer.appendChild(gridSquare)
+
+            gridSquare.addEventListener("mouseenter", () => {
+                gridSquare.style.opacity = Number(gridSquare.style.opacity) + 0.1
+            })
         }
-        
         container.appendChild(lineContainer)
     }
 }
 
-const divContainer = document.querySelector('.container')
+const divContainer = document.querySelector('.flex-grid')
 createGrid(numbRows, numbColumns, divContainer)
