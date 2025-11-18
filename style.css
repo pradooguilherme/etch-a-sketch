@@ -1,17 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .flex-grid {
-    width: 100px;
-    height: 100px;
     display: flex;
+    background-color: black;
+    min-width: 964px;
+    max-width: 964px;
+    min-height: 964px;
     flex-wrap: wrap;
-}
-
-.line-container {
-    display: flex;
-}
-
-.line-container div {
-    background-color: red;
-    opacity: 0%;
-    width: 50px;
-    height: 50px;
+    border: solid;
+    border-width: 2px;
 }
