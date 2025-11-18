@@ -1,3 +1,7 @@
+.container {
+    border: 1px solid blue;
+}
+
 .line-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +9,6 @@
 
 .line-container div {
     background: white;
-    border: 1px solid brown;
-    height: 100px;
+    height: 20px;
     flex: 1
 }
